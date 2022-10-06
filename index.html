@@ -1,0 +1,121 @@
+<DOCTYPE! html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="styles.css">
+      <title>Anti-Hero Survey Form</title>
+    </head>
+    <body>
+      <main id="main">
+        <h1 id="title">Anti-Hero Survey Form</h1>
+      <p id="description">Answer the following questions below. Results will be calculated soon to determine who the <em>best</em> anti-hero in TV history is. </p>
+      <br>
+      <form id="survey-form" action="#">
+        <fieldset>
+            <p>1. Which of the following anti-hero characters has the best story-arc?</p><br>
+            <label for="Tony-Soprano" class="radio-label">Tony Soprano (The Sopranos)
+              <input type="radio" id="Tony-Soprano" value="Tony-Soprano" name="story-arc" />
+            </label><br>
+            <label for="Walter-White" class="radio-label">Walter White (Breaking Bad)
+              <input type="radio" id="Walter-White" value="Walter-White" name="story-arc" />
+            </label><br>
+            <label for="Saul-Goodman" class="radio-label">Jimmy McGill/Saul Goodman (Better Call Saul)
+              <input type="radio" id="Saul-Goodman" value="Saul-Goodman" name="story-arc" />
+            </label><br>
+            <label for="Marty-Byrde" class="radio-label">Marty Byrde (Ozark)
+              <input type="radio" id="Marty-Byrde" value="Marty-Byrde" name="story-arc" />
+            </label><br>
+            <label for="Omar-Little" class="radio-label">Omar Little (The Wire)
+              <input type="radio" id="Omar-Little" value="Omar-Little" name="story-arc" />
+            </label><br>
+            <label for="Dexter-Morgan" class="radio-label">Dexter Morgan (Dexter)
+              <input type="radio" id="Dexter-Morgan" value="Dexter-Morgan" name="story-arc" />
+            </label><br>
+
+            <p>2. Which of the following anti-hero characters committed the highest number of atrocities?</p><br>
+            <label for="Tony-Soprano" class="radio-label">Tony Soprano
+              <input type="radio" id="Tony-Soprano" value="Tony-Soprano" name="evil-quantity" />
+            </label><br>
+            <label for="Walter-White" class="radio-label">Walter White
+              <input type="radio" id="Walter-White" value="Walter-White" name="evil-quantity" />
+            </label><br>
+            <label for="Saul-Goodman" class="radio-label">Jimmy McGill/Saul Goodman
+              <input type="radio" id="Saul-Goodman" value="Saul-Goodman" name="evil-quantity" />
+            </label><br>
+            <label for="Marty-Byrde" class="radio-label">Marty Byrde
+              <input type="radio" id="Marty-Byrde" value="Marty-Byrde" name="evil-quantity" />
+            </label><br>
+            <label for="Omar-Little" class="radio-label">Omar Little
+              <input type="radio" id="Omar-Little" value="Omar-Little" name="evil-quantity" />
+            </label><br>
+            <label for="Dexter-Morgan" class="radio-label">Dexter Morgan
+              <input type="radio" id="Dexter-Morgan" value="Dexter-Morgan" name="evil-quantity" />
+            </label><br>
+
+            <p>3. Which of the following anti-hero characters committed the most severe atrocity?</p><br>
+            <label for="Tony-Soprano" class="radio-label">Tony Soprano
+              <input type="radio" id="Tony-Soprano" value="Tony-Soprano" name="evil-quality" />
+            </label><br>
+            <label for="Walter-White" class="radio-label">Walter White
+              <input type="radio" id="Walter-White" value="Walter-White" name="evil-quality" />
+            </label><br>
+            <label for="Saul-Goodman" class="radio-label">Jimmy McGill/Saul Goodman
+              <input type="radio" id="Saul-Goodman" value="Saul-Goodman" name="evil-quality" />
+            </label><br>
+            <label for="Marty-Byrde" class="radio-label">Marty Byrde
+              <input type="radio" id="Marty-Byrde" value="Marty-Byrde" name="evil-quality" />
+            </label><br>
+            <label for="Omar-Little" class="radio-label">Omar Little
+              <input type="radio" id="Omar-Little" value="Omar-Little" name="evil-quality" />
+            </label><br>
+            <label for="Dexter-Morgan" class="radio-label">Dexter Morgan
+              <input type="radio" id="Dexter-Morgan" value="Dexter-Morgan" name="evil-quality" />
+            </label><br>
+
+            <label for="favorite-series" id="favorite-label">
+              <p>4. Which of the following TV series is your personal favorite?</p>
+              <select id="dropdown">
+                <option value="">(Please Select One)</option>
+                <option value="1">The Sopranos</option>
+                <option value="2">Breaking Bad</option>
+                <option value="3">Better Call Saul</option>
+                <option value="4">Ozark</option>
+                <option value="5">Dexter</option>
+                <option value="6">The Wire</option>
+              </select>
+            </label>
+            
+            <p>5. Explain why you chose the series selected in number 4.</p>
+            <textarea id="explanation" placeholder="The best anti-hero series in TV history is..."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <h4>Please fill out the indicated fields before submitting your survey.</h4>
+          <hr>
+          <br>
+              <label for="name" id="name-label">Name:
+                <input id="name" type="text" placeholder="Paulie Walnuts" required />
+              </label><br>
+              <label for="email" id="email-label">Email Address:
+                <input id="email" type="email" placeholder="PWalnuts@BaroneSanitation.org" required />
+              </label><br>
+              <label for="age" id="number-label">Age: <em>(optional)<em>
+                <input id="number" type="number" min="12" max="100" placeholder="65" />
+              </label><br>
+              <label id="checkbox">Which of the following options describes you best? <em>(Select all that apply):<em><br>
+                <label for="casual-viewer">I'm a casual viewer.
+                  <input id="casual-viewer" type="checkbox" name="description" value="casual-viewer" />
+                </label><br>
+                <label for="huge-fan">I'm a huge fan of one or more of these series.
+                  <input id="huge-fan" type="checkbox" name="description" value="huge-fan" />
+                </label><br>
+                <label for="pro-critic">I'm a professional critic.
+                  <input id="pro-critc" type="checkbox" name="description" value="pro-critic" />
+                </label><br>
+              </label>
+            </fieldset><br>
+            <button type="Submit" id="submit" />Submit</button><br>
+          </form> 
+      </main> 
+    </body>
+  </html>
